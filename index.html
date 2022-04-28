@@ -9,11 +9,12 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="hamburguer_icon" id="ham_menu" onclick="OpenMenu()"><i class="fa-solid fa-bars"></i></div>
+        <button class="hamburger">
+            <div class="bar"></div>
+        </button>
         <div class="logo_container"></div>
     </nav>
-        <div class="menu_container" id="MenuContainer">
-        <div class="close_icon" id="CloseIcon" onclick="CloseMenu()"><i class="fa-solid fa-lg fa-circle-xmark"></i>Close Menu</div>
+        <div class="menu_container is-active" id="MenuContainer">
         <div class="sedes">
             <a href="https://google.com"><div class="sede_container_caes">
                 <div class="sede_logo_caes"></div>
@@ -39,8 +40,9 @@
                 <a href="#"> <li><i class="fa-solid fa-briefcase"></i>Trabaja Con Nosotros</li></a>
             </div>
         </ul>
-
-        <a href="#" class="mi_colegio"><i class="fa-solid fa-house-laptop"></i>Mi Colegio</a>
+        <div class="mi_colegio_button">
+            <a href="#" class="mi_colegio"><i class="fa-solid fa-house-laptop"></i>Mi Colegio</a>
+        </div>
         
     </div>
     <script src="js/script.js"></script>
