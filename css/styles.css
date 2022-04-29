@@ -179,7 +179,6 @@ div.sede_logo_caes{
     justify-content:center;
     align-items: center;
     background-color: var(--primary_blue);
-    padding-top: .5rem;
     transition: 0.4s;
 }
 
@@ -215,7 +214,6 @@ div.sede_logo_caes{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 15px;
 }
 
 
