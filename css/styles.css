@@ -16,7 +16,7 @@
 }
 
 body{
-    background-color: #1C2362;
+    background-color: #2d39a3;
 }
 
 .hamburger{
@@ -95,7 +95,7 @@ body{
     justify-content: center;
     align-items: center;
     padding: 5rem 0 2rem 0;
-    background: var(--primary_blue);
+    background-color: var(--primary_blue);
 }
 
 
@@ -178,11 +178,9 @@ div.sede_logo_caes{
     flex-direction: column;
     justify-content:center;
     align-items: center;
-    background: var(--primary_blue);
+    background-color: var(--primary_blue);
     padding-top: 1rem;
     transition: 0.4s;
-    
-    
 }
 
 .menu_container.is-active{
@@ -225,10 +223,14 @@ div.sede_logo_caes{
     display: block;
     font-weight: bold;
     color: white;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     padding-right: 0;
-    padding-left: 15%;
+    padding-left: 30%;
+}
+
+.menu_container .menu_links svg{
+    margin-right: 10px;
 }
 
 .menu_container .menu_links:hover{
