@@ -29,6 +29,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 1rem;
     align-items: center;
     width: 100%;
     height: 84px;
@@ -37,7 +38,13 @@ body{
     font-size: 14px;
 }
 
-
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+}
 
 .left-side{
     display: flex;
@@ -142,7 +149,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     background-repeat: no-repeat;
 }
 
@@ -225,8 +232,21 @@ body{
     justify-content: space-between;
     align-items: center;
     background-color: var(--primary_blue);
-    padding: 2rem;
-    border-bottom: solid 2px #101546;
+    padding: 1rem;
+    z-index: 1;
+}
+
+.navbar-mobile.is-active{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary_blue);
+    padding: 1rem;
+    border-bottom: solid 6px #ffffff;
     z-index: 1;
 }
 
@@ -238,11 +258,11 @@ body{
 
 .logo_container{
     background-image: url("../img/mao_logo_main.svg");
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     background-size: cover;
     background-repeat: no-repeat;
-    margin:  auto;
+    margin: 0 auto;
     cursor: pointer;
     transition: 0.2s all;
     z-index: 2;
@@ -250,16 +270,32 @@ body{
 }
 
 .logo_container:hover{
-   width: 100px;
-   height: 100px;
+   width: 75px;
+   height: 75px;
 }
+
+.mi_colegio_mobile{
+    background-color: #F8C300;
+    padding: .6rem .8rem;
+    margin: .2rem;
+    border-radius: .5rem;
+    color: #1C2362;
+    
+}
+
+.mi_colegio_mobile:hover{
+    background-color: #ffffff;
+    color: #1c2362;
+}
+
+
 
 .sedes{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5rem 0 2rem 0;
+    padding: 8rem 0 2rem 0;
     background-color: var(--primary_blue);
 }
 
@@ -354,6 +390,18 @@ div.sede_logo_caes{
     right:100%;
     z-index: 0;
     
+}
+
+.logo_container.is-active{
+    background-image: url("../img/Mao\ Logo\ borde\ svg.svg");
+    width: 90px;
+    height: 90px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 1.5rem 0 auto;
+    cursor: pointer;
+    transition: 0.2s all;
+    z-index: 2;
 }
 
 .menu_container .mi_colegio{
